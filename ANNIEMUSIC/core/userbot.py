@@ -11,35 +11,35 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="penguin1",
+            name="reshu1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            name="penguin2",
+            name="reshu2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="penguin3",
+            name="reshu3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="penguin4",
+            name="reshu4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="penguin5",
+            name="reshu5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -47,18 +47,18 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"penguin's Assistant starting...")
+        LOGGER(__name__).info(f"reshu's Assistant starting...")
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("penguin_x_chat")
+                await self.one.join_chat("icc_x_support")
               
                 await self.one.join_chat("loggchk")
             except:
                 pass
             assistants.append(1)
             try:
-                await self.one.send_message(config.LOGGER_ID, "penguin's Assistant Start.........")
+                await self.one.send_message(config.LOGGER_ID, "reshu's Assistant Start.........")
                                          
             except:
                 LOGGER(__name__).error(
@@ -74,14 +74,14 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("penguin_x_chat")
+                await self.two.join_chat("icc_x_support")
                 
                 await self.one.join_chat("loggchk")
             except:
                 pass
             assistants.append(2)
             try:
-                await self.two.send_message(config.LOGGER_ID, "penguin's Assistant Started")
+                await self.two.send_message(config.LOGGER_ID, "reshu's Assistant Started")
             except:
                 LOGGER(__name__).error(
                     "Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
@@ -96,14 +96,14 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("penguin_x_chat")
+                await self.three.join_chat("icc_x_support")
                 
                 await self.one.join_chat("loggchk")
             except:
                 pass
             assistants.append(3)
             try:
-                await self.three.send_message(config.LOGGER_ID, "penguin's Assistant Started")
+                await self.three.send_message(config.LOGGER_ID, "reshuhh's Assistant Started")
             except:
                 LOGGER(__name__).error(
                     "Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
@@ -118,14 +118,14 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("penguin_x_chat")
+                await self.four.join_chat("icc_x_support")
                 
                 await self.one.join_chat("loggchk")
             except:
                 pass
             assistants.append(4)
             try:
-                await self.four.send_message(config.LOGGER_ID, "penguin's Assistant Started")
+                await self.four.send_message(config.LOGGER_ID, "reshu's Assistant Started")
             except:
                 LOGGER(__name__).error(
                     "Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
@@ -140,14 +140,14 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("penguin_x_chat")
+                await self.five.join_chat("icc_x_support")
                 
                 await self.one.join_chat("loggchk")
             except:
                 pass
             assistants.append(5)
             try:
-                await self.five.send_message(config.LOGGER_ID, "penguin's Assistant Started")
+                await self.five.send_message(config.LOGGER_ID, "reshu's Assistant Started")
             except:
                 LOGGER(__name__).error(
                     "Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
@@ -160,7 +160,7 @@ class Userbot(Client):
             LOGGER(__name__).info(f"Assistant Five Started as {self.five.name}")
 
     async def stop(self):
-        LOGGER(__name__).info(f"penguin's Stopping Assistants...")
+        LOGGER(__name__).info(f"reshu's Stopping Assistants...")
         try:
             if config.STRING1:
                 await self.one.stop()
